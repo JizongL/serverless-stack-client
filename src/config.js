@@ -9,7 +9,7 @@ const dev = {
   },
   cognito: {
     REGION: "us-east-1",
-    USER_POOL_ID: "notes-app-2-api-dev-attachmentsbucket-5qmsazagzrj1",
+    USER_POOL_ID: "us-east-1_phxyOxRjs",
     APP_CLIENT_ID: "5unfcads3400ruvup7746mh2pm",
     IDENTITY_POOL_ID: "us-east-1:e25f5c65-e589-467b-836f-01305c739553",
   },
