@@ -5,12 +5,8 @@ import ConditionalWrap from "./ConditionalWrap";
 
 function querystring(name, url = window.location.href) {
   name = name.replace(/[[]]/g, "\\$&");
-  console.log(url, "test url");
-  console.log(name, "test name");
   const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i");
-  console.log(regex, "test regex");
   const results = regex.exec(url);
-  console.log(results, "test result");
   if (!results) {
     return null;
   }
