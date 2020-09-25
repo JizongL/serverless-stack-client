@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
 import { useAppContext } from "../libs/contextLib";
 import { onError } from "../libs/errorLib";
-import { API, loadingContainer } from "aws-amplify";
+import { API } from "aws-amplify";
 import "./Home.css";
 import { LinkContainer } from "react-router-bootstrap";
 

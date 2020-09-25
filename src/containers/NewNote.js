@@ -1,4 +1,4 @@
-import React, { createContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
@@ -36,7 +36,7 @@ export default function NewNote() {
 
     try {
       const attatchment = file.current ? await s3Upload(file.current) : null;
-      await createNote({ content });
+      await createNote({ content, attatchment });
       history.push("/");
     } catch (e) {
       onError(e);
