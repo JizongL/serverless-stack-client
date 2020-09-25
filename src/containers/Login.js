@@ -8,11 +8,8 @@ import { useAppContext } from "../libs/contextLib";
 import LoaderButton from "../components/LoaderButton";
 import { useFormFields } from "../libs/hooksLib";
 export default function Login() {
-  const history = useHistory();
   const { userHasAuthenticated } = useAppContext();
-  const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [password, setPassword] = useState("");
   const [fields, handleFieldChange] = useFormFields({
     email: "",
     password: "",
