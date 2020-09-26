@@ -5,7 +5,9 @@ import App from "./App";
 import { Amplify } from "aws-amplify";
 import config from "./config";
 import { BrowserRouter as Router } from "react-router-dom";
+import { initSentry } from "./libs/errorLib";
 
+initSentry();
 Amplify.configure({
   Auth: {
     mandatorySignIn: true,
